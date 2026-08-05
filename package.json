@@ -1,0 +1,31 @@
+{
+  "name": "zoid-bank-finance-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "High-fidelity visual prototype for the local-first Zoid Bank macOS finance companion.",
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --port 4173",
+    "build": "vite build",
+    "prod:build": "npm run build",
+    "prod:start": "node harbor-prod-server.mjs",
+    "prod": "npm run prod:build && npm run prod:start",
+    "test": "node --test",
+    "messages:build": "mkdir -p .harbor && swiftc -O harbor-messages-source.swift -o .harbor/harbor-messages-source",
+    "messages:bridge": "npm run messages:build && node harbor-local-bridge.mjs",
+    "messages:install": "zsh scripts/install-harbor-launchagent.sh",
+    "messages:uninstall": "zsh scripts/uninstall-harbor-launchagent.sh",
+    "dashboard:install": "zsh scripts/install-harbor-dashboard-launchagent.sh",
+    "dashboard:uninstall": "zsh scripts/uninstall-harbor-dashboard-launchagent.sh",
+    "macos:build": "zsh scripts/build-harbor-macos-app.sh",
+    "macos:open": "npm run macos:build && open '.harbor/macos-build/Zoid Bank.app'"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "agentation": "^3.0.2",
+    "vite": "^8.2.0"
+  }
+}
