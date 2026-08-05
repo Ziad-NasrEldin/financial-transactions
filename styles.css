@@ -1174,6 +1174,27 @@ h3 {
   min-width: 0;
 }
 
+.transactions-toolbar .currency-control {
+  min-width: 180px;
+}
+
+.transactions-toolbar .sumi-dropdown__label,
+.transactions-toolbar .currency-control > small {
+  display: none;
+}
+
+.transactions-toolbar .sumi-dropdown__trigger {
+  min-height: 34px;
+  padding: 7px 9px;
+  font-size: 11px;
+}
+
+.transactions-toolbar .sumi-dropdown__value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .currency-control {
   display: grid;
   gap: 3px;
