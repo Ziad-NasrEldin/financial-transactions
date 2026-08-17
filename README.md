@@ -1,5 +1,9 @@
 # Zoid Bank
 
+<p align="center">
+  <img src="docs/hero.png" alt="Zoid Bank dashboard" width="900">
+</p>
+
 A local-first finance companion that turns bank SMS alerts into an evidence-backed ledger — without leaving your Mac Mini.
 
 **Who it's for.** Anyone who wants a private view of Bank Al Ahly and Banque Misr activity, recurring payments, and reviewable imports on one machine — with nothing uploaded.
@@ -12,9 +16,11 @@ A local-first finance companion that turns bank SMS alerts into an evidence-back
 - Read-only Messages access — nothing is sent, marked read, edited, deleted, or uploaded
 - A native macOS window plus a local dashboard for everyday use
 
-## Run locally
+## Try it
 
-This companion is local-only. There is no public site.
+A public preview of the dashboard: [financial-transactions-vert.vercel.app](https://financial-transactions-vert.vercel.app)
+
+The full companion (Messages bridge + native window) is still local-only:
 
 ```bash
 npm start
