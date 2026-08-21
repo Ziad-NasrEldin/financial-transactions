@@ -3,3 +3,7 @@
 dist/
 .harbor/
 node_modules/
+
+# Junk / non-production files
+*.log
+*.plan.md
